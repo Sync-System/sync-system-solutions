@@ -36,18 +36,33 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-24 px-4 bg-gradient-to-b from-background to-muted">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <span className="text-primary inline-block px-4 py-1 rounded-full bg-primary/10 text-sm font-medium mb-4">
+        <div className="text-center mb-20">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-primary inline-block px-6 py-2 rounded-full bg-primary/10 text-sm font-medium mb-6"
+          >
             Our Services
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-accent mb-4">
+          </motion.span>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold text-accent mb-6"
+          >
             Comprehensive Tech Solutions
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+          >
             From DevOps to Digital Marketing, we provide end-to-end solutions for modern enterprises
-          </p>
+          </motion.p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,11 +72,14 @@ export const Services = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="p-6 rounded-xl bg-muted hover:shadow-lg transition-shadow"
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              className="p-8 rounded-xl bg-white hover:bg-primary/5 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <service.icon className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-xl font-semibold text-accent mb-2">{service.title}</h3>
-              <p className="text-muted-foreground">{service.description}</p>
+              <div className="bg-primary/10 p-4 rounded-lg inline-block mb-6">
+                <service.icon className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-semibold text-accent mb-4">{service.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </motion.div>
           ))}
         </div>

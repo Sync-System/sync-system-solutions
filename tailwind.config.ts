@@ -25,15 +25,15 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#4FD1C5",
+          DEFAULT: "#8B5CF6",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#F6AD55",
-          foreground: "#000000",
+          DEFAULT: "#D6BCFA",
+          foreground: "#1A1F2C",
         },
         accent: {
-          DEFAULT: "#2D3748",
+          DEFAULT: "#1A1F2C",
           foreground: "#FFFFFF",
         },
         muted: {
@@ -45,7 +45,7 @@ export default {
         "fade-up": {
           "0%": {
             opacity: "0",
-            transform: "translateY(10px)",
+            transform: "translateY(20px)",
           },
           "100%": {
             opacity: "1",
@@ -60,10 +60,19 @@ export default {
             opacity: "1",
           },
         },
+        "scale-up": {
+          "0%": {
+            transform: "scale(0.95)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
       },
       animation: {
-        "fade-up": "fade-up 0.5s ease-out",
-        "fade-in": "fade-in 0.3s ease-out",
+        "fade-up": "fade-up 0.6s ease-out",
+        "fade-in": "fade-in 0.4s ease-out",
+        "scale-up": "scale-up 0.3s ease-out",
       },
     },
   },
