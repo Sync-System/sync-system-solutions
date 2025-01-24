@@ -19,15 +19,17 @@ export const Hero = () => {
             transition={{ delay: 0.2 }}
             className="flex items-center justify-center gap-2 mb-8"
           >
-            <span className="bg-tech-gradient text-white px-6 py-2 rounded-full text-sm font-medium backdrop-blur-sm inline-flex items-center gap-2 shadow-lg">
-              <Shield className="w-4 h-4" /> Enterprise Solutions Powered by AI
+            <span className="bg-glow-gradient text-white px-6 py-2 rounded-full text-sm font-medium backdrop-blur-sm inline-flex items-center gap-2 shadow-lg animate-float">
+              <Shield className="w-4 h-4" /> Next-Generation Enterprise Solutions
             </span>
           </motion.div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-accent mb-8 leading-tight">
-            Transform Your Business With
-            <span className="bg-clip-text text-transparent bg-tech-gradient block mt-2">
-              Next-Gen Technology
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+            <span className="bg-clip-text text-transparent bg-tech-gradient block">
+              Transforming Businesses
+            </span>
+            <span className="text-accent">
+              Through Innovation
             </span>
           </h1>
 
@@ -41,7 +43,7 @@ export const Hero = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-tech-gradient text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20 flex items-center gap-2"
+              className="bg-glow-gradient text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-tech-purple/20 flex items-center gap-2"
             >
               Start Your Digital Journey <ArrowRight className="w-5 h-5" />
             </motion.button>
@@ -60,10 +62,10 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-tech-purple/20 transition-all duration-300 group hover:-translate-y-1"
             >
-              <div className="bg-primary/10 p-3 rounded-lg">
-                <Cloud className="w-6 h-6 text-primary" />
+              <div className="bg-tech-purple/10 p-3 rounded-lg group-hover:bg-tech-purple/20 transition-colors">
+                <Cloud className="w-6 h-6 text-tech-purple" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-accent">Cloud Native</h3>
@@ -75,10 +77,10 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-tech-purple/20 transition-all duration-300 group hover:-translate-y-1"
             >
-              <div className="bg-primary/10 p-3 rounded-lg">
-                <Shield className="w-6 h-6 text-primary" />
+              <div className="bg-tech-purple/10 p-3 rounded-lg group-hover:bg-tech-purple/20 transition-colors">
+                <Shield className="w-6 h-6 text-tech-purple" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-accent">DevSecOps</h3>
@@ -90,10 +92,10 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-tech-purple/20 transition-all duration-300 group hover:-translate-y-1"
             >
-              <div className="bg-primary/10 p-3 rounded-lg">
-                <Cpu className="w-6 h-6 text-primary" />
+              <div className="bg-tech-purple/10 p-3 rounded-lg group-hover:bg-tech-purple/20 transition-colors">
+                <Cpu className="w-6 h-6 text-tech-purple" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-accent">AI & MLOps</h3>
@@ -105,10 +107,10 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-tech-purple/20 transition-all duration-300 group hover:-translate-y-1"
             >
-              <div className="bg-primary/10 p-3 rounded-lg">
-                <Network className="w-6 h-6 text-primary" />
+              <div className="bg-tech-purple/10 p-3 rounded-lg group-hover:bg-tech-purple/20 transition-colors">
+                <Network className="w-6 h-6 text-tech-purple" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-accent">Digital</h3>
