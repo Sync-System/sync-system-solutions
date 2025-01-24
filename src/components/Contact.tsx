@@ -14,7 +14,7 @@ export const Contact = () => {
             transition={{ duration: 0.5 }}
             className="text-primary inline-block px-6 py-2 rounded-full bg-white/10 backdrop-blur-sm text-sm font-medium mb-6"
           >
-            Get in Touch
+            Contact Us
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ export const Contact = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-white mb-6"
           >
-            Let's Start Your Digital Journey
+            Start Your Digital Transformation
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ export const Contact = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg text-white/80 max-w-2xl mx-auto"
           >
-            Ready to transform your business? Contact us to discuss your technology needs
+            Let's discuss how our enterprise solutions can accelerate your business growth
           </motion.p>
         </div>
 
@@ -40,7 +40,7 @@ export const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             whileHover={{ y: -5, transition: { duration: 0.2 } }}
-            className="flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10"
+            className="flex flex-col items-center p-8 bg-card-gradient backdrop-blur-sm rounded-xl border border-white/10"
           >
             <div className="bg-primary/20 p-4 rounded-full mb-6">
               <Mail className="w-8 h-8 text-primary" />
@@ -54,7 +54,7 @@ export const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             whileHover={{ y: -5, transition: { duration: 0.2 } }}
-            className="flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10"
+            className="flex flex-col items-center p-8 bg-card-gradient backdrop-blur-sm rounded-xl border border-white/10"
           >
             <div className="bg-primary/20 p-4 rounded-full mb-6">
               <Phone className="w-8 h-8 text-primary" />
@@ -68,7 +68,7 @@ export const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             whileHover={{ y: -5, transition: { duration: 0.2 } }}
-            className="flex flex-col items-center p-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10"
+            className="flex flex-col items-center p-8 bg-card-gradient backdrop-blur-sm rounded-xl border border-white/10"
           >
             <div className="bg-primary/20 p-4 rounded-full mb-6">
               <MapPin className="w-8 h-8 text-primary" />
@@ -84,7 +84,7 @@ export const Contact = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <button className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+          <button className="inline-flex items-center gap-2 bg-tech-gradient text-white px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
             Schedule a Consultation <ArrowRight className="w-5 h-5" />
           </button>
         </motion.div>

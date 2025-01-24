@@ -1,51 +1,51 @@
 import { motion } from "framer-motion";
-import { Code2, Cloud, Database, Smartphone, Globe, BarChart, Shield, Cpu, Network } from "lucide-react";
+import { Code2, Cloud, Database, Smartphone, Globe, BarChart, Shield, Cpu, Network, Bot, Layers, Brain } from "lucide-react";
 
 const services = [
   {
     icon: Shield,
-    title: "DevOps & DevSecOps",
-    description: "Secure, automated CI/CD pipelines with built-in security controls and compliance",
+    title: "Enterprise DevSecOps",
+    description: "Secure CI/CD pipelines with automated security controls and compliance monitoring",
   },
   {
-    icon: Cpu,
-    title: "AI & MLOps",
-    description: "End-to-end machine learning lifecycle management and AI model deployment",
+    icon: Brain,
+    title: "AI & Machine Learning",
+    description: "Custom AI solutions, ML model development, and intelligent automation systems",
   },
   {
     icon: Cloud,
     title: "Cloud Solutions",
-    description: "Cloud-native architecture design and implementation with multi-cloud expertise",
+    description: "Multi-cloud architecture design and implementation with enterprise-grade security",
+  },
+  {
+    icon: Bot,
+    title: "Intelligent Automation",
+    description: "RPA and cognitive automation for business process optimization",
+  },
+  {
+    icon: Database,
+    title: "Big Data Analytics",
+    description: "Advanced analytics and data engineering solutions for actionable insights",
+  },
+  {
+    icon: Layers,
+    title: "Microservices",
+    description: "Scalable microservices architecture with container orchestration",
   },
   {
     icon: Network,
     title: "Digital Transformation",
-    description: "Strategic modernization of legacy systems and business processes",
-  },
-  {
-    icon: Database,
-    title: "DataOps & Analytics",
-    description: "Data pipeline automation and advanced analytics solutions",
-  },
-  {
-    icon: Code2,
-    title: "Custom Development",
-    description: "Enterprise-grade applications built with cutting-edge technologies",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Solutions",
-    description: "Native and cross-platform mobile applications with seamless UX",
+    description: "End-to-end digital transformation strategy and implementation",
   },
   {
     icon: Globe,
-    title: "Digital Marketing",
-    description: "Data-driven SEO and marketing campaigns powered by AI",
+    title: "Cloud Native Apps",
+    description: "Modern cloud-native application development and migration services",
   },
   {
-    icon: BarChart,
-    title: "AIOps",
-    description: "AI-powered IT operations automation and monitoring",
+    icon: Cpu,
+    title: "Edge Computing",
+    description: "Edge computing solutions for real-time processing and analytics",
   },
 ];
 
@@ -60,7 +60,7 @@ export const Services = () => {
             transition={{ duration: 0.5 }}
             className="text-primary inline-block px-6 py-2 rounded-full bg-primary/10 text-sm font-medium mb-6"
           >
-            Our Services
+            Enterprise Solutions
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ export const Services = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            From DevOps to Digital Marketing, we provide end-to-end solutions for modern enterprises
+            Accelerate your digital transformation with our cutting-edge enterprise solutions
           </motion.p>
         </div>
         
@@ -88,7 +88,7 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="p-8 rounded-xl bg-white/5 backdrop-blur-sm border border-accent/10 hover:bg-white/10 transition-all duration-300"
+              className="p-8 rounded-xl bg-card-gradient backdrop-blur-sm border border-white/10 hover:border-primary/20 transition-all duration-300"
             >
               <div className="bg-primary/10 p-4 rounded-lg inline-block mb-6">
                 <service.icon className="w-8 h-8 text-primary" />

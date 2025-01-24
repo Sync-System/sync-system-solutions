@@ -25,30 +25,32 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#8B5CF6",
+          DEFAULT: "#6366F1",
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#D6BCFA",
+          DEFAULT: "#A5B4FC",
           foreground: "#1A1F2C",
         },
         accent: {
-          DEFAULT: "#1A1F2C",
+          DEFAULT: "#0F172A",
           foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#F7FAFC",
-          foreground: "#4A5568",
+          DEFAULT: "#F8FAFC",
+          foreground: "#475569",
         },
         tech: {
-          purple: "#7E69AB",
-          blue: "#1EAEDB",
-          dark: "#1A1F2C",
+          purple: "#6366F1",
+          blue: "#3B82F6",
+          dark: "#0F172A",
+          light: "#F1F5F9",
         },
       },
       backgroundImage: {
-        'tech-gradient': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
-        'hero-pattern': 'radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, rgba(30, 174, 219, 0.05) 100%)',
+        'tech-gradient': 'linear-gradient(135deg, #6366F1 0%, #3B82F6 100%)',
+        'hero-pattern': 'radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%)',
+        'card-gradient': 'linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%)',
       },
       keyframes: {
         "fade-up": {

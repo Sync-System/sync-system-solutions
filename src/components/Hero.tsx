@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Cloud, Database, Shield } from "lucide-react";
+import { ArrowRight, Cloud, Shield, Cpu, Network } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -19,8 +19,8 @@ export const Hero = () => {
             transition={{ delay: 0.2 }}
             className="flex items-center justify-center gap-2 mb-8"
           >
-            <span className="bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-medium backdrop-blur-sm inline-flex items-center gap-2">
-              <Shield className="w-4 h-4" /> Enterprise-Grade Solutions
+            <span className="bg-tech-gradient text-white px-6 py-2 rounded-full text-sm font-medium backdrop-blur-sm inline-flex items-center gap-2 shadow-lg">
+              <Shield className="w-4 h-4" /> Enterprise Solutions Powered by AI
             </span>
           </motion.div>
 
@@ -33,7 +33,7 @@ export const Hero = () => {
 
           <div className="max-w-3xl mx-auto">
             <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-              Empowering enterprises with cutting-edge DevOps, AI, and Cloud Solutions for the digital age
+              Empowering enterprises with cutting-edge AI, Cloud Computing, and DevOps solutions for digital excellence
             </p>
           </div>
 
@@ -41,33 +41,33 @@ export const Hero = () => {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-primary text-white px-8 py-4 rounded-lg font-medium hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl hover:shadow-primary/20 flex items-center gap-2"
+              className="bg-tech-gradient text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/20 flex items-center gap-2"
             >
-              Get Started <ArrowRight className="w-5 h-5" />
+              Start Your Digital Journey <ArrowRight className="w-5 h-5" />
             </motion.button>
             
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white/10 backdrop-blur-sm text-accent px-8 py-4 rounded-lg font-medium hover:bg-white/20 transition-colors border border-accent/10"
+              className="bg-white/10 backdrop-blur-sm text-accent px-8 py-4 rounded-lg font-medium hover:bg-white/20 transition-all duration-300 border border-accent/10"
             >
-              Learn More
+              Explore Solutions
             </motion.button>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="flex items-center gap-4 bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-accent/10"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
             >
               <div className="bg-primary/10 p-3 rounded-lg">
                 <Cloud className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-accent">Cloud Native</h3>
-                <p className="text-sm text-muted-foreground">Scalable Infrastructure</p>
+                <p className="text-sm text-muted-foreground">Scalable Solutions</p>
               </div>
             </motion.div>
 
@@ -75,7 +75,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex items-center gap-4 bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-accent/10"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
             >
               <div className="bg-primary/10 p-3 rounded-lg">
                 <Shield className="w-6 h-6 text-primary" />
@@ -90,14 +90,29 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex items-center gap-4 bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-accent/10"
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
             >
               <div className="bg-primary/10 p-3 rounded-lg">
-                <Database className="w-6 h-6 text-primary" />
+                <Cpu className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold text-accent">AI & MLOps</h3>
-                <p className="text-sm text-muted-foreground">Intelligent Solutions</p>
+                <p className="text-sm text-muted-foreground">Smart Solutions</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
+              className="flex items-center gap-4 bg-card-gradient backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-primary/20 transition-all duration-300"
+            >
+              <div className="bg-primary/10 p-3 rounded-lg">
+                <Network className="w-6 h-6 text-primary" />
+              </div>
+              <div className="text-left">
+                <h3 className="font-semibold text-accent">Digital</h3>
+                <p className="text-sm text-muted-foreground">Transformation</p>
               </div>
             </motion.div>
           </div>
