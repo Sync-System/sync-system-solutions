@@ -40,6 +40,15 @@ export default {
           DEFAULT: "#F7FAFC",
           foreground: "#4A5568",
         },
+        tech: {
+          purple: "#7E69AB",
+          blue: "#1EAEDB",
+          dark: "#1A1F2C",
+        },
+      },
+      backgroundImage: {
+        'tech-gradient': 'linear-gradient(90deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%)',
+        'hero-pattern': 'radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, rgba(30, 174, 219, 0.05) 100%)',
       },
       keyframes: {
         "fade-up": {

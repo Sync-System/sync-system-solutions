@@ -1,43 +1,58 @@
 import { motion } from "framer-motion";
-import { Code2, Cloud, Database, Smartphone, Globe, BarChart } from "lucide-react";
+import { Code2, Cloud, Database, Smartphone, Globe, BarChart, Shield, Cpu, Network } from "lucide-react";
 
 const services = [
   {
-    icon: Cloud,
+    icon: Shield,
     title: "DevOps & DevSecOps",
-    description: "Streamline your development pipeline with secure, automated solutions",
+    description: "Secure, automated CI/CD pipelines with built-in security controls and compliance",
+  },
+  {
+    icon: Cpu,
+    title: "AI & MLOps",
+    description: "End-to-end machine learning lifecycle management and AI model deployment",
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Solutions",
+    description: "Cloud-native architecture design and implementation with multi-cloud expertise",
+  },
+  {
+    icon: Network,
+    title: "Digital Transformation",
+    description: "Strategic modernization of legacy systems and business processes",
   },
   {
     icon: Database,
-    title: "DataOps & MLOps",
-    description: "Transform data into actionable insights with our AI-powered solutions",
+    title: "DataOps & Analytics",
+    description: "Data pipeline automation and advanced analytics solutions",
   },
   {
     icon: Code2,
-    title: "Web Development",
-    description: "Custom e-commerce and enterprise web solutions built for scale",
+    title: "Custom Development",
+    description: "Enterprise-grade applications built with cutting-edge technologies",
   },
   {
     icon: Smartphone,
-    title: "Native Apps",
-    description: "Cross-platform mobile applications with seamless user experience",
+    title: "Mobile Solutions",
+    description: "Native and cross-platform mobile applications with seamless UX",
   },
   {
     icon: Globe,
     title: "Digital Marketing",
-    description: "SEO optimization and Google Ads campaigns that drive results",
+    description: "Data-driven SEO and marketing campaigns powered by AI",
   },
   {
     icon: BarChart,
     title: "AIOps",
-    description: "Intelligent operations automation powered by advanced AI",
+    description: "AI-powered IT operations automation and monitoring",
   },
 ];
 
 export const Services = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-background to-muted">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-24 px-4 bg-gradient-to-b from-background via-background/95 to-background">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -73,7 +88,7 @@ export const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="p-8 rounded-xl bg-white hover:bg-primary/5 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="p-8 rounded-xl bg-white/5 backdrop-blur-sm border border-accent/10 hover:bg-white/10 transition-all duration-300"
             >
               <div className="bg-primary/10 p-4 rounded-lg inline-block mb-6">
                 <service.icon className="w-8 h-8 text-primary" />
